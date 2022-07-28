@@ -1,0 +1,43 @@
+shamsTIIDELAB write a program that uses console.log to print all the numbers
+from 1 to 200, with two exceptions. for numbers divisible by 6, print "shams"
+instead of the number, and for numbers divisible by 8 (and not 6), print
+"TIIDELAB" instead. when you have that working , modify your program to print
+"shamsTIIDELAB" for numbers divisible by both 6 and 8 (and still print "shams"
+or "TIIDELAB" for numbers divisibleby only one of those).
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+            for(let y = 1; y <= 200; y++)
+            {
+               
+               let shams = y % 6
+               let TIIDELAB = y % 8
+              // divisible by 6 and 8
+               if ((shams == 0) && (TIIDELAB == 0) ){
+                  console.log("shamsTIIDELAB");
+               }
+               // divisible by 6
+               else if (shams == 0){
+                   console.log("shams");
+               }
+               // divisible by 8
+               else if(TIIDELAB == 0){
+                  console.log ("TIIDELAB");
+               }
+               else{
+                   console.log(y)
+               };
+
+            }
+    </script>
+  </body>
+</html>
